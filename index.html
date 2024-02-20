@@ -1,67 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0CDB01;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #3D549F;
+  padding: 35px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #0134DB
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #061D6B;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #061D6B;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #ccc;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
     table, th, td {
       border:1px solid black;
     }
     </style>
+  
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Autobiografia</title>
 </head>
-<body style="background-color: yellow;">
-    <hr>
-    <h1 style="text-align:center;color: orange;">Mi Autobiografia </h1>
+<body>
+    <header>
+      <h1 style="text-align:center;color: yellow;">Mi Autobiografia </h1>
     <p style="text-align:center;color: yellow;"><b>Paul Sebastian Colmenares Ramirez</b></p>
-    <hr>
-    <hr> 
-    <p> "!HOLAA¡ soy un estudiante del colegio guanenta de la especialidad de sistemas
+    </header>
+
+
+    <section>
+      <nav>
+          <ul>
+        <li><a class="active" href="https://paulcolmenares.000webhostapp.com/index.html">Mi biografia</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/familia.html">Familia</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/hobbies.html">Hobbies</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/nacimiento.htm">Nacimiento</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/amigods.html">Amigos</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/proyecto_vida.html">Proyecto de vida</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/educacion.html">Educacion</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/saber11.html">Saber11</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/mi_horario.html">Mi horario</a></li>
+      </ul>
+      </nav>
+
+
+   
+    <article>
+      <p> "!HOLAA¡ soy un estudiante del colegio guanenta de la especialidad de sistemas
         y en esta pagina les mostrare toda mi biografia, mis hobbies, mis proyectos a futuro y mi familia
-    </p>
-    <hr>
-    <img src="https://paulcolmenares.000webhostapp.com/img/toby.jpg" width="500" height="333">
-    <hr>
-    <table>
-        <tr>
-          <th><b>CONTENIDO</b></th>
-          
-        </tr>
-        <tr>
-          <td><a href="https://paulcolmenares.000webhostapp.com/nacimiento.html">Nacimiento</a></td>
-          
-        </tr>
-        <tr>
-          <td><a href="https://paulcolmenares.000webhostapp.com/familia.html">Familia</a></td>
-          
-        </tr>
-        <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/educacion.html">Educacion</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/amigods.html">Amigos</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/hobbies.html">Hobbies</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/mi_horario.html">Mi horario</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/saber11.html">Saber 11</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/proyecto_vida.html">Proyecto de vida</a></td>
-            
-            
-            
-      </table>
-      <hr>
+      </p>
+    <img src="https://paulcolmenares.000webhostapp.com/img/toby.jpg" width="200" height="200">
+  </article>
+
+
+
     
 </body>
 </html>
