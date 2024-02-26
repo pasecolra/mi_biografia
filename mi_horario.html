@@ -1,151 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <style>
-    table, th, td {
-      border:1px solid gray;
-    }
-    </style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi horario</title>
+    <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
-    <hr>
-    <h1 style="text-align:center;color: orange;">Mi horario </h1>
-    <hr>
+    <header>
+      <h1 style="text-align:center;color: yellow;">Mi horario </h1>
+    </header>
 
-    <table align="center">
-      <tr>
-        <th style="background-color: orange;">Hora</th>
-          <th style="background-color: orange;">Lunes</th>
-          <th style="background-color: orange;">Martes</th>
-          <th style="background-color: orange;">Miércoles</th>
-          <th style="background-color: orange;">Jueves</th>
-          <th style="background-color: orange;">Viernes</th>
-          <th style="background-color: orange;">Sabado</th>
-          <th style="background-color: orange;">Domingo</th>
-      </tr>
-      <tr>
-        <tr>
-          <td style="background-color: orange;">6:00-6:50 AM</td>
-          <td rowspan="2" style="background-color: purple;">Español</td>
-          <td rowspan="4" style="background-color: #682912;">Especialidad</td>
-          <td rowspan="1" style="background-color: purple;">Español</td>
-          <td rowspan="1" style="background-color: #38DFCB;">Estadistica</td>
-          <td rowspan="1">Religion</td>
-          <td rowspan="4">Duermo</td>
-          <td rowspan="4">Duermo</td>
-          
-      </tr>
-      <tr>
-          <td style="background-color: orange;">6:50-7:40 AM</td>
-          <td rowspan="2" style="background-color: orange;">Fisica</td>
-          <td rowspan="1" style="background-color: greenyellow;">Ciencias politicas</td>
-          <td rowspan="1">Fisica</td>
-          
-          
-         
-      </tr>
-      <tr>
-          <td style="background-color: orange;">7:55-8:45 AM</td>
-          <td rowspan="2" style="background-color: blue;">Ingles</td>
-          <td rowspan="2" style="background-color: goldenrod;">Edu.Fisica</td>
-          <td rowspan="2">Quimica</td>
-          
-      </tr>
-      <tr>
-          <td style="background-color: orange;">8:45-9:35 AM</td>
-          <td rowspan="1" style="background-color: pink;">Quimica</td>
-          
-         
-      </tr>
-      <tr>
-          <td style="background-color: orange;">9:50-10:40 AM</td>
-          <td rowspan="2" style="background-color: green;">Matematicas</td>
-          <td rowspan="1" style="background-color: blue;">Ingles</td>
-          <td rowspan="2" style="background-color: #38DFCB;">Filosofia</td>
-          <td rowspan="1" style="background-color: gold;">Sociales</td>
-          <td rowspan="2">Matematicas</td>
-          <td rowspan="4">pract.guitarra</td>
-          <td rowspan="4">pract.guitarra</td>
-      </tr>
-      <tr>
-          <td style="background-color: orange;">10:40-11:30 AM</td>
-          <td rowspan="1" style="background-color: orangered;">Valores</td>
-          <td rowspan="1" style="background-color: #026257;">Artistica</td>
-          
-          
-      </tr>
-      <tr>
-          <td style="background-color: orange;">2:30-3:20 PM</td>
-          <td rowspan="4" style="background-color: #682912;"">Especialidad</td>
-          <td rowspan="4">Tareas</td>
-          <td rowspan="1">Duermo</td>
-          <td rowspan="4">Tareas</td>
-          <td rowspan="4">Tareas</td>
-          
-          
-      </tr>
-      <tr>
-          <td style="background-color: orange;">3:20-4:10 PM</td>
-          <td rowspan="3">Especialidad</td>
-          
-          
-      </tr>
-      <tr>
-          <td style="background-color: orange;">4:25-5:10 PM</td>
-          <td rowspan="2">Tareas</td>
-          <td rowspan="2">Tareas</td>
-          
-         
-      </tr>
-      <tr>
-          <td style="background-color: orange;">5:10-6:00 PM</td>
-          
-      </tr>
-  </table>
 
-    <hr>
-    <table>
-        <tr>
-          <th><b>HOME</b></th>
-          
-        </tr>
-        <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/index.html">Mi biografia</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/nacimiento.html">Nacimiento</a></td>
-            
-          </tr>
-          <tr>
-            <td><a href="https://paulcolmenares.000webhostapp.com/familia.html">Familia</a></td>
-            
-          </tr>
-          <tr>
-              <td><a href="https://paulcolmenares.000webhostapp.com/educacion.html">Educacion</a></td>
-              
-            </tr>
-            <tr>
-              <td><a href="https://paulcolmenares.000webhostapp.com/amigods.html">Amigos</a></td>
-              
-            </tr>
-            <tr>
-              <td><a href="https://paulcolmenares.000webhostapp.com/hobbies.html">Hobbies</a></td>
-              
-            </tr>
-           
-            <tr>
-              <td><a href="https://paulcolmenares.000webhostapp.com/saber11.html">Saber 11</a></td>
-              
-            </tr>
-            <tr>
-              <td><a href="https://paulcolmenares.000webhostapp.com/proyecto_vida.html">Proyecto de vida</a></td>
+    <section>
+      <nav>
+          <ul>
+        <li><a class="active" href="https://paulcolmenares.000webhostapp.com/mi_horario.html">Mi horario</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/familia.html">Familia</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/hobbies.html">Hobbies</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/nacimiento.htm">Nacimiento</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/amigods.html">Amigos</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/proyecto_vida.html">Proyecto de vida</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/educacion.html">Educacion</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/saber11.html">Saber11</a></li>
+        <li><a href="https://paulcolmenares.000webhostapp.com/index.html">Mi biografia</a></li>
+      </ul>
+      </nav>
+<article>
+  <table align="center">
+    <tr>
+      <th style="background-color: orange;">Hora</th>
+        <th style="background-color: orange;">Lunes</th>
+        <th style="background-color: orange;">Martes</th>
+        <th style="background-color: orange;">Miércoles</th>
+        <th style="background-color: orange;">Jueves</th>
+        <th style="background-color: orange;">Viernes</th>
+        <th style="background-color: orange;">Sabado</th>
+        <th style="background-color: orange;">Domingo</th>
+    </tr>
+    <tr>
+      <tr>
+        <td style="background-color: orange;">6:00-6:50 AM</td>
+        <td rowspan="2" style="background-color: purple;">Español</td>
+        <td rowspan="4" style="background-color: #682912;">Especialidad</td>
+        <td rowspan="1" style="background-color: purple;">Español</td>
+        <td rowspan="1" style="background-color: #38DFCB;">Estadistica</td>
+        <td rowspan="1" style="background-color: #F4D757;">Religion</td>
+        <td rowspan="4" style="background-color: #6727E6;">Duermo</td>
+        <td rowspan="4" style="background-color: #6727E6;">Duermo</td>
         
-      </table>
-      <hr>
-    
+    </tr>
+    <tr>
+        <td style="background-color: orange;">6:50-7:40 AM</td>
+        <td rowspan="2" style="background-color: orange;">Fisica</td>
+        <td rowspan="1" style="background-color: greenyellow;">Ciencias politicas</td>
+        <td rowspan="1" style="background-color: orange">Fisica</td>
+        
+        
+       
+    </tr>
+    <tr>
+        <td style="background-color: orange;">7:55-8:45 AM</td>
+        <td rowspan="2" style="background-color: blue;">Ingles</td>
+        <td rowspan="2" style="background-color: goldenrod;">Edu.Fisica</td>
+        <td rowspan="2" style="background-color: pink;">Quimica</td>
+        
+    </tr>
+    <tr>
+        <td style="background-color: orange;">8:45-9:35 AM</td>
+        <td rowspan="1" style="background-color: pink;">Quimica</td>
+        
+       
+    </tr>
+    <tr>
+        <td style="background-color: orange;">9:50-10:40 AM</td>
+        <td rowspan="2" style="background-color: green;">Matematicas</td>
+        <td rowspan="1" style="background-color: blue;">Ingles</td>
+        <td rowspan="2" style="background-color: #38DFCB;">Filosofia</td>
+        <td rowspan="1" style="background-color: gold;">Sociales</td>
+        <td rowspan="2" style="background-color: green;">Matematicas</td>
+        <td rowspan="4" style="background-color: #4EA7AF;">pract.guitarra</td>
+        <td rowspan="4" style="background-color: #4EA7AF;">pract.guitarra</td>
+    </tr>
+    <tr>
+        <td style="background-color: orange;">10:40-11:30 AM</td>
+        <td rowspan="1" style="background-color: orangered;">Valores</td>
+        <td rowspan="1" style="background-color: #026257;">Artistica</td>
+        
+        
+    </tr>
+    <tr>
+        <td style="background-color: orange;">2:30-3:20 PM</td>
+        <td rowspan="4" style="background-color: #682912;">Especialidad</td>
+        <td rowspan="4" style="background-color: #E62727;">Tareas</td>
+        <td rowspan="1" style="background-color: #6727E6;">Duermo</td>
+        <td rowspan="4" style="background-color: #E62727;">Tareas</td>
+        <td rowspan="4" style="background-color: #E62727;">Tareas</td>
+        
+        
+    </tr>
+    <tr>
+        <td style="background-color: orange;">3:20-4:10 PM</td>
+        <td rowspan="3" style="background-color: #682912;">Especialidad</td>
+        
+        
+    </tr>
+    <tr>
+        <td style="background-color: orange;">4:25-5:10 PM</td>
+        <td rowspan="2" style="background-color: #E62727;">Tareas</td>
+        <td rowspan="2" style="background-color: #E62727;">Tareas</td>
+        
+       
+    </tr>
+    <tr>
+        <td style="background-color: orange;">5:10-6:00 PM</td>
+        
+    </tr>
+  </table>
+  </article>
+
 </body>
 </html>
